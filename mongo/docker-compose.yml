@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongo
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/data/configdb:/data/configdb
+      - $PWD/data/db:/data/db
+    ports:
+      - "27017:27017"
+

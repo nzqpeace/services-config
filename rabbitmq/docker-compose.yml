@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: rabbitmq
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/data:/data
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_CONF_ENV_FILE=/data/rabbitmq-env.conf

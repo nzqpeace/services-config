@@ -1,0 +1,6 @@
+*.log
+*.db
+*.tmp
+*.rdb
+mongo/data/db/
+rabbitmq/data/mnesia/
