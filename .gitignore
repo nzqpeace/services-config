@@ -4,3 +4,4 @@
 *.rdb
 mongo/data/db/
 rabbitmq/data/mnesia/
+mysql/data/
